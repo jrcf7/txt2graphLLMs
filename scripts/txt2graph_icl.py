@@ -13,9 +13,7 @@ from utils.post_processing import post_process_predictions
 from utils.evaluate_predictions import evaluate_predictions
 
 
-os.environ["HF_HOME"] = "/home/diglifeproc/DIGLIFE-scratch/cache/huggingface/"
-
-hf_login_key = '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'
+hf_login_key = LOGIN_KEY
 
 login(hf_login_key)
 
