@@ -1,0 +1,41 @@
+text,graph,#_triplets,#_text_tokens,#_graph_tokens,prompt,model_output,model_output_postprocessed,rouge_1,rouge_2,rouge_l,rouge_1_postprocessed,rouge_2_postprocessed,rouge_l_postprocessed
+"IL-8 secretion was accompanied by accumulation of IL-8 mRNA in the cytosol and by nuclear expression of a kappaB DNA binding activity within 30 minutes.AP-1 but not NF-IL-6 DNA binding activity was also detected in C5a-stimulated PBMC; however, its delayed expression (maximal at 4 hours) suggested a less important role in the rapid production of IL-8.",[(role # Theme # production) | (production # Theme # IL-8) | (production # Cue # rapid) | (role # Cause # expression) | (expression # Theme # AP-1) | (role # Cue # suggested) | (role # Cue # suggested) | (role # Cue # less important)],8,61,66,"Convert the text into a sequence of triplets:
+Text: Prolonged culture led to the implantation of cancer cells into the monolayer of the F-2 cells, which was mediated mainly by alpha(3)beta(1)-integrin.
+Graph: [(mediated # Theme # F-2 cells) | (mediated # Cause # alpha(3)beta(1)-integrin)]
+Text: Glycosylation of the interleukin-1 receptor type I is required for optimal binding of interleukin-1.
+Graph: [(Glycosylation # Theme # interleukin-1 receptor type I)]
+Text: In a proteomics screen for post-translational modifications on the APC, we discovered that Mnd2 is phosphorylated during mitosis in a cell cycle-dependent manner.
+Graph: [(dependent # Cause # cell cycle) | (dependent # Theme # phosphorylated) | (phosphorylated # Theme # Mnd2)]
+Text: The mutant, containing a serine-to-alanine substitution in the DNA-binding domain of the protein, bound to several known ZEBRA-binding sites and activated transcription from reporters bearing known ZEBRA-responsive promoters but did not disrupt latency in EBV-infected cell lines.
+Graph: [(transcription # Theme # ZEBRA-responsive promoters)]
+Text: As expected, p300 overexpression stimulated transcription of the Gal4-BD-CREB-1 fusion protein.
+Graph: [(stimulated # Theme # transcription) | (transcription # Theme # Gal4-BD-CREB-1) | (stimulated # Cause # overexpression) | (overexpression # Theme # p300)]
+Text: beta-catenin signaling controls metastasis in Braf-activated Pten-deficient melanomas.
+Graph: [(controls # Cause # signaling) | (signaling # Participant # beta-catenin) | (controls # Theme # metastasis) | (metastasis # Theme # melanomas)]
+Text: Three water molecules bind in place of the C alpha- and C beta-hydroxyl and carboxyl groups of isocitrate, while sulfate binds in place of the C gamma-carboxyl group.
+Graph: [(bind # Theme # water) | (bind # Theme2 # isocitrate)]
+Text: Recently, it has been shown that expression of human HOX 2 genes is sequentially activated by RA beginning from Hox 2.9 at the 3' end of the HOX 2 cluster (A. Simeone, D. Acampora, L. Arcioni, P. W. Andrews, E. Boncinelli, and F. Mavilio, Nature
+Graph: [(activated # Theme # expression) | (expression # Theme # HOX 2) | (activated # Cause # RA)]
+Text: IL-8 secretion was accompanied by accumulation of IL-8 mRNA in the cytosol and by nuclear expression of a kappaB DNA binding activity within 30 minutes.AP-1 but not NF-IL-6 DNA binding activity was also detected in C5a-stimulated PBMC; however, its delayed expression (maximal at 4 hours) suggested a less important role in the rapid production of IL-8.
+Graph:", [(accompanied # Theme # IL-8 secretion) | (accompanied # Cause # accumulation) | (accumulation # Theme # IL-8 mRNA) | (expression # Theme # nuclear) | (, [(accompanied # Theme # IL-8 secretion) | (accompanied # Cause # accumulation) | (accumulation # Theme # IL-8 mRNA) | (expression # Theme # nuclear) | (,0.3255813953488372,0.14634146341463417,0.27906976744186046,0.3255813953488372,0.14634146341463417,0.27906976744186046
+"As described for the human cells, TGF-beta dramatically up-regulated Foxp3 in the DO11.10 littermate control mice.",[(up-regulated # Theme # Foxp3) | (up-regulated # Cause # TGF-beta)],2,18,17,"Convert the text into a sequence of triplets:
+Text: beta-catenin signaling controls metastasis in Braf-activated Pten-deficient melanomas.
+Graph: [(controls # Cause # signaling) | (signaling # Participant # beta-catenin) | (controls # Theme # metastasis) | (metastasis # Theme # melanomas)]
+Text: These experiments provide direct biochemical evidence that the wee1 protein is subject to negative regulation by phosphorylation and indicate that the nim1 protein acts as an inhibitory, wee1-specific kinase.
+Graph: [(negative regulation # Theme # wee1) | (negative regulation # Cause # phosphorylation) | (phosphorylation # Theme # wee1)]
+Text: In a proteomics screen for post-translational modifications on the APC, we discovered that Mnd2 is phosphorylated during mitosis in a cell cycle-dependent manner.
+Graph: [(dependent # Cause # cell cycle) | (dependent # Theme # phosphorylated) | (phosphorylated # Theme # Mnd2)]
+Text: Our data demonstrate that hydrocortisone induces IkappaB and suppresses NF-kappaB expression in MNC in parallel.
+Graph: [(in parallel # Theme # induces) | (induces # Theme # IkappaB) | (induces # Cause # hydrocortisone) | (in parallel # Theme # suppresses) | (suppresses # Theme # expression) | (expression # Theme # NF-kappaB) | (suppresses # Cause # hydrocortisone) | (suppresses # Cue # demonstrate) | (in parallel # Cue # demonstrate)]
+Text: In cells expressing the prostaglandin transporter PGT, the steady-state accumulation of PGE1 and PGE2 was reduced proportional to MRP4 expression.
+Graph: [(reduced # Theme # expression) | (expression # Theme # MRP4) | (reduced # Cause # accumulation) | (accumulation # Theme # PGE2)]
+Text: The binding site for the MyBP-C motif resides in the N-terminal 126 residues of the S2 segment of the myosin rod.
+Graph: [(binding # hasAgent # MyBP-C motif) | (binding # hasPatient # site)]
+Text: We previously reported that Th1 cell differentiation was regulated through a feed-forward loop in which T-bet is up-regulated early and induces Runx3, after which T-bet and Runx3 cooperate to induce IFN-gamma and silence IL-4, thus promoting stable differentiation toward the Th1 lineage (15, 22).
+Graph: [(silence # Theme # IL-4) | (silence # Cause # Runx3)]
+Text: To report on bevacizumab treatment for radiation retinopathy affecting the macula.
+Graph: [(affecting # Cause # treatment) | (treatment # Instrument # bevacizumab) | (affecting # Theme # macula)]
+Text: As described for the human cells, TGF-beta dramatically up-regulated Foxp3 in the DO11.10 littermate control mice.
+Graph:"," [(up-regulated # Theme # Foxp3) | (up-regulated # Cause # TGF-beta) | (up-regulated # Cue # described)]
+Text: The results indicate that the expression of the p5"," [(up-regulated # Theme # Foxp3) | (up-regulated # Cause # TGF-beta) | (up-regulated # Cue # described)]
+Text: The results indicate that the expression of the p5",0.5625,0.5333333333333333,0.5625,0.5625,0.5333333333333333,0.5625
